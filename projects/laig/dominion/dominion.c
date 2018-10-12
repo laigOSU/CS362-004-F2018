@@ -643,7 +643,9 @@ int getCost(int cardNumber)
     return -1;
 }
 
-// Refactored card functions
+/***********************************
+  REFACTORED CARD FUNCTIONS
+************************************/
 int smithyFunction(int currentPlayer, struct gameState *state, int handPos){
   //+3 Cards
   for (int i = 0; i < 3; i++){
@@ -682,6 +684,14 @@ int adventurerFunction(struct gameState *state, int currentPlayer, int temphand[
   return 0;
 }
 
+int outpostFunction(struct gameState* state, int handPos, int currentPlayer){
+  //set outpost flag
+  state->outpostPlayed++;
+
+  //discard card
+  discardCard(handPos, currentPlayer, state, 0);
+  return 0;
+}
 
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
 {
@@ -1208,12 +1218,17 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
             return 0;
 
         case outpost:
+          return outpostFunction(state, handPos, currentPlayer);
+            /*
             //set outpost flag
             state->outpostPlayed++;
 
             //discard card
             discardCard(handPos, currentPlayer, state, 0);
             return 0;
+            */
+
+
 
         case salvager:
             //+1 buy
