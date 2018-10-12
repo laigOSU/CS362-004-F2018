@@ -671,7 +671,8 @@ int adventurerFunction(struct gameState *state, int currentPlayer, int temphand[
       }
       drawCard(currentPlayer, state);
       cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-      if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+      // if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+      if (cardDrawn == copper || cardDrawn == silver || cardDrawn == silver) // Bug: silver condition repeated, missing gold condition.
           drawntreasure++;
       else{
           temphand[z]=cardDrawn;
