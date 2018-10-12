@@ -648,7 +648,9 @@ int getCost(int cardNumber)
 ************************************/
 int smithyFunction(int currentPlayer, struct gameState *state, int handPos){
   //+3 Cards
-  for (int i = 0; i < 3; i++){
+  //for (int i = 0; i < 3; i++){
+  for (int i = 0; i < 2; i++){  // Bug - incorrectly allow player to draw 2 cards
+                                // instead of 3.
     drawCard(currentPlayer, state);
   }
 
