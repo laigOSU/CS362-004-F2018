@@ -684,6 +684,18 @@ int adventurerFunction(struct gameState *state, int currentPlayer, int temphand[
   return 0;
 }
 
+int great_hallFunction(int currentPlayer, struct gameState* state, int handPos){
+  //+1 Card
+  drawCard(currentPlayer, state);
+
+  //+1 Actions
+  state->numActions++;
+
+  //discard card from hand
+  discardCard(handPos, currentPlayer, state, 0);
+  return 0;
+}
+
 int outpostFunction(struct gameState* state, int handPos, int currentPlayer){
   //set outpost flag
   state->outpostPlayed++;
@@ -705,6 +717,8 @@ int villageFunction(int currentPlayer, struct gameState* state, int handPos){
   return 0;
 
 }
+
+
 
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
 {
@@ -982,6 +996,8 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
             return 0;
 
         case great_hall:
+            return great_hallFunction(currentPlayer, state, handPos);
+            /*
             //+1 Card
             drawCard(currentPlayer, state);
 
@@ -991,6 +1007,9 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
             //discard card from hand
             discardCard(handPos, currentPlayer, state, 0);
             return 0;
+            */
+
+
 
         case minion:
             //+1 action
