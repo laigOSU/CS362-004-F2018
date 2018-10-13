@@ -692,7 +692,7 @@ int great_hallFunction(int currentPlayer, struct gameState* state, int handPos){
   drawCard(currentPlayer, state);
 
   //+1 Actions
-  state->numActions++;
+  //state->numActions++; // Bug: does not increment number of actions
 
   //discard card from hand
   discardCard(handPos, currentPlayer, state, 0);
@@ -713,7 +713,8 @@ int villageFunction(int currentPlayer, struct gameState* state, int handPos){
   drawCard(currentPlayer, state);
 
   //+2 Actions
-  state->numActions = state->numActions + 2;
+  //state->numActions = state->numActions + 2;
+  state->numActions = state->numActions; // Bug - fail to perform two actions
 
   //discard played card from hand
   discardCard(handPos, currentPlayer, state, 0);
