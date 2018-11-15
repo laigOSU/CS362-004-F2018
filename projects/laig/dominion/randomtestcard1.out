@@ -1,0 +1,260 @@
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 1
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 2
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 3
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Failed: Improperly made an action(s)
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 4
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 5
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 6
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 7
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 8
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 9
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 10
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 11
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 12
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 13
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 14
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 15
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 16
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 17
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 18
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 19
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 20
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 21
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 22
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Failed: Improperly made an action(s)
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 23
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 24
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+***********************************************
+Random Test Card 1 for Outpost Card, Test# 25
+***********************************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+
+Function 'updateCoins'
+Lines executed:81.82% of 11
+
+Function 'gainCard'
+Lines executed:0.00% of 13
+
+Function 'discardCard'
+Lines executed:92.31% of 13
+
+Function 'cardEffect'
+Lines executed:4.27% of 211
+
+Function 'villageFunction'
+Lines executed:0.00% of 5
+
+Function 'outpostFunction'
+Lines executed:100.00% of 4
+
+Function 'great_hallFunction'
+Lines executed:0.00% of 4
+
+Function 'adventurerFunction'
+Lines executed:0.00% of 16
+
+Function 'smithyFunction'
+Lines executed:0.00% of 5
+
+Function 'getCost'
+Lines executed:0.00% of 30
+
+Function 'drawCard'
+Lines executed:36.36% of 22
+
+Function 'getWinners'
+Lines executed:0.00% of 24
+
+Function 'scoreFor'
+Lines executed:0.00% of 24
+
+Function 'isGameOver'
+Lines executed:0.00% of 10
+
+Function 'endTurn'
+Lines executed:0.00% of 20
+
+Function 'whoseTurn'
+Lines executed:100.00% of 2
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 9
+
+Function 'supplyCount'
+Lines executed:0.00% of 2
+
+Function 'handCard'
+Lines executed:0.00% of 3
+
+Function 'numHandCards'
+Lines executed:0.00% of 2
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+
+Function 'playCard'
+Lines executed:0.00% of 14
+
+Function 'shuffle'
+Lines executed:93.75% of 16
+
+Function 'initializeGame'
+Lines executed:83.87% of 62
+
+Function 'kingdomCards'
+Lines executed:0.00% of 13
+
+Function 'newGame'
+Lines executed:0.00% of 3
+
+Function 'compare'
+Lines executed:83.33% of 6
+
+File 'dominion.c'
+Lines executed:20.83% of 557
+Creating 'dominion.c.gcov'
+
