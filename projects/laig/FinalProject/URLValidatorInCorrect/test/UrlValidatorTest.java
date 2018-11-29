@@ -59,7 +59,7 @@ public class UrlValidatorTest extends TestCase {
 //	   assertTrue(manualUrl.isValid("http://www.google.com:0")); // Failed: expect valid, returns invalid
 	   assertFalse(manualUrl.isValid("http://www.google.com:65535")); // Failed: expect valid, returns invalid
 //	   assertTrue(manualUrl.isValid("http://www.google.com:65535")); // Failed: expect valid, returns invalid (Keep commented)	
-//	   assertFalse(manualUrl.isValid("http://www.google.com:65a")); // Failed: expect invalid, returns valid (Keep commented)
+//	   assertFalse(manualUrl.isValid("http://www.google.com:65a")); // Failed: expect invalid/false, returns not false (Keep commented)
 //	   assertTrue(manualUrl.isValid("http://www.google.com:65a")); // Passed: expect invalid, returns invalid (Keep commented)
 	   
 	   // Test: invalid path
@@ -76,12 +76,12 @@ public class UrlValidatorTest extends TestCase {
 	   // Test: invalid query
 	   assertTrue(manualUrl.isValid("http://www.google.com/test1?action=view")); // Passed: expect valid, returns valid
 	   assertTrue(manualUrl.isValid("http://www.google.com/test1?action=edit&mode=up")); // Passed: expect valid, returns valid
-//	   assertFalse(manualUrl.isValid("http://www.google.com/test1?action=view")); // Passed: expect valid, returns false (Keep commented)
+//	   assertFalse(manualUrl.isValid("http://www.google.com/test1?action=view")); // Passed: expect valid/true, returns not false (Keep commented)
 	   
 	    
 	   // Test: valid Local url
 	   assertTrue(manualUrl.isValid("http://localhost/")); // Passed: expect valid, returns valid
-//	   assertFalse(manualUrl.isValid("http://localhost/")); // Passed: expect valid, returns false (Keep commented)
+//	   assertFalse(manualUrl.isValid("http://localhost/")); // Passed: expect valid/true, returns not false (Keep commented)
 	   assertTrue(manualUrl.isValid("http://machine/")); // Passed: expect valid, returns valid
 //	   assertFalse(manualUrl.isValid("http://machine/")); // Passed: expect valid, returns false (Keep commented)
 	   
