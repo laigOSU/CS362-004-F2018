@@ -22,7 +22,6 @@ public class UrlValidatorTest extends TestCase {
    {
 	 //You can use this function to implement your manual testing	  
 	   
-	   
 	   // Url has: <scheme>://<authority><path>?<query>
 	   // scheme+authority+port+path+query
 	   UrlValidator manualUrl = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
