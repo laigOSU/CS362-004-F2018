@@ -60,7 +60,7 @@ public class UrlValidatorTest extends TestCase {
 	   assertFalse(manualUrl.isValid("http://www.google.com:65535")); // Failed: expect valid, returns invalid
 //	   assertTrue(manualUrl.isValid("http://www.google.com:65535")); // Failed: expect valid, returns invalid (Keep commented)	
 //	   assertFalse(manualUrl.isValid("http://www.google.com:65a")); // Failed: expect invalid, returns valid (Keep commented)
-	   
+//	   assertTrue(manualUrl.isValid("http://www.google.com:65a")); // Passed: expect invalid, returns invalid (Keep commented)
 	   
 	   // Test: invalid path
 	    assertTrue(manualUrl.isValid("http://www.ggogle.com/test1")); // Passed: expect valid, returns valid
@@ -112,4 +112,3 @@ public class UrlValidatorTest extends TestCase {
 
 
 }
-
