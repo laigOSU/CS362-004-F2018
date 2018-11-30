@@ -1,0 +1,83 @@
+****************************
+Unittest1 for whoseTurn()
+****************************
+Player should be: 0
+
+Passed: player is player 0
+Test for checking which player's turn -  passed
+File 'dominion.c'
+Lines executed:0.33% of 598
+Creating 'dominion.c.gcov'
+
+****************************
+Unittest2 for isGameOver()
+****************************
+Passed:  Empty province pile correctly returns isGameOver() as true
+Passed:  Test three empty piles correctly returns isGameOver() as true
+File 'dominion.c'
+Lines executed:15.38% of 598
+Creating 'dominion.c.gcov'
+
+****************************
+Unittest3 for buyCard()
+****************************
+
+Testing when player has insufficient coins
+Passed: Correctly returns error for insufficient coins
+
+Testing when player has sufficient coins
+Failed: buyCard() incorreectly returns error
+File 'dominion.c'
+Lines executed:1.17% of 598
+Creating 'dominion.c.gcov'
+
+****************************
+Unittest4 for updateCoins()
+****************************
+Add copper coins
+Failed: Expected: 5, Actual: 0
+Add silver coins
+Failed: Expected: 10, Actual: 0
+Add gold coins
+Failed: Expected: 15, Actual: 0
+File 'dominion.c'
+Lines executed:0.84% of 598
+Creating 'dominion.c.gcov'
+
+****************************
+Cardtest1 for Adventurer Card
+****************************
+Passed: Adventurer successfully revealed two Treasure cards
+Passed:  Correctly played Adventurer (no excessive actions)
+File 'dominion.c'
+Lines executed:19.06% of 598
+Creating 'dominion.c.gcov'
+
+****************************
+Cardtest2 for Smithy Card
+****************************
+Passed: Smithy correctly drew 3 cards
+Passed: Smithy properly discarded from hand
+File 'dominion.c'
+Lines executed:20.23% of 598
+Creating 'dominion.c.gcov'
+
+****************************
+Cardtest3 for Salvager Card
+****************************
+Passed: Successfully performed +1 buy
+Passed where the Salvager was discarded
+File 'dominion.c'
+Lines executed:20.23% of 598
+Creating 'dominion.c.gcov'
+
+****************************
+Cardtest4 for Outpost Card
+****************************
+Passed: Outpost flag in struct gameState successfully set
+Passed: Properly discarded Outpost card.
+Passed: Did not take extra or improper actions
+File 'dominion.c'
+Lines executed:18.56% of 598
+Creating 'dominion.c.gcov'
+
