@@ -86,14 +86,104 @@ public class UrlValidatorTest extends TestCase {
    }
    
    
-   public void testYourFirstPartition()
-   {
-	 //You can use this function to implement your First Partition testing	   
-
+   // Function to generate a URL with a random path
+   public static String randomString() {
+	   
+	   	   // Max URL length = 2,083 characters
+           String alphabet= "abcdefghijklmnopqrstuvwxyz0123456789";
+           String s = "";
+           Random random = new Random();
+           // Generate string length [1, 2083]
+           int randomLength = 1+random.nextInt(2083);
+           for (int i = 0; i < randomLength; i++) {
+               char c = alphabet.charAt(random.nextInt(36));
+               s+=c;
+           }
+           
+           String scheme = "http://www.";
+           //String scheme = "https://www.";
+           //String scheme = "ftp://www.";
+           String end = ".com";
+           
+           // Concatenate the random path with a valid scheme and authority
+           String temp = scheme + s + end;
+           
+           return temp;
+   }
+   
+   // Function to generate a URL with a random port
+   public static String randomPort() {
+       
+	   	   // Valid Ports: 0-65535
+           String numbers= "0123456";
+           String s = "";
+           Random random = new Random();
+           // Generate string length [1, 7]
+           int randomLength = 1+random.nextInt(7);
+           for (int i = 0; i < randomLength; i++) {
+               char c = numbers.charAt(random.nextInt(2));
+               s+=c;
+           }
+           
+           String valid = "http://www.google.com:";
+           
+           // Concatenate the random port with a valid scheme and authority
+           String temp = valid + s;
+           
+           return temp;
+   }
+   
+   
+   public void testYourFirstPartition() {
+   
+	   //You can use this function to implement your First Partition testing	   
+	   // Url format: <scheme>://<authority><path>?<query>
+	   UrlValidator testURL = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
+	 
+	   // Test URLs with valid scheme, authority, port and random paths
+	   boolean Check;
+	 
+	   // Create 100-1000 random URL paths
+	   for (int j = 1; j < 100; j++) {
+		   String tempURL = UrlValidatorTest.randomString();
+		   Check = testURL.isValid(tempURL);
+		   
+		   //System.out.println("URL: " + tempURL);
+		 
+		   if (Check == true) {
+			   System.out.println("P1: Passed Test " + j);
+		   }
+		 
+		   else if (Check == false) {
+			   System.out.println("P1: Failed Test " + j);
+		   }
+	    }
    }
    
    public void testYourSecondPartition(){
-		 //You can use this function to implement your Second Partition testing	   
+	   
+	   //You can use this function to implement your Second Partition testing	   
+	   // Url format: <scheme>://<authority><path>?<query>
+	   UrlValidator testURL = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
+	 
+	   // Test URLs with valid scheme, authority, port and random paths
+	   boolean Check;
+	 
+	   // Create 100-1000 random URL paths
+	   for (int j = 1; j < 100; j++) {
+		   String tempURL = UrlValidatorTest.randomPort();
+		   Check = testURL.isValid(tempURL);
+		   
+		   System.out.println("URL: " + tempURL);
+		 
+		   if (Check == true) {
+			   System.out.println("P2: Passed Test " + j);
+		   }
+		 
+		   else if (Check == false) {
+			   System.out.println("P2: Failed Test " + j);
+		   }
+	    }   
 
    }
    //You need to create more test cases for your Partitions if you need to 
